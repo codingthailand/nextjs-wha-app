@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-3xl text-center">
         <Badge variant="default" asChild>
           <Link href="/product" className="no-underline!">
-            งานฝีมือจากช่างไทยทั่วประเทศ
+            Welcome to WHA
           </Link>
         </Badge>
 
