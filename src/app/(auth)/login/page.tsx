@@ -21,6 +21,7 @@ import {
 } from "@/components/ui/field"
 import { Input } from "@/components/ui/input"
 import { authClient } from "@/lib/auth-client"
+import Link from "next/link"
 import { useRouter } from "next/navigation"
 
 const loginSchema = z.object({
@@ -62,7 +63,7 @@ export default function LoginForm() {
   }
 
   return (
-  <div className="min-h-screen flex items-center justify-center">
+  <div className="min-h-screen flex items-center justify-center bg-background px-4">
     <Card className="w-full sm:max-w-md">
       <CardHeader>
         <CardTitle>เข้าสู่ระบบ</CardTitle>
@@ -122,11 +123,11 @@ export default function LoginForm() {
         <Button type="submit" form="form-login" className="w-full">
           เข้าสู่ระบบ
         </Button>
-        <p className="text-center text-sm text-muted-foreground">
+        <p className="text-center text-body-small text-muted-foreground">
           ยังไม่มีบัญชี?{" "}
-          <a href="/register" className="underline underline-offset-4 hover:text-primary">
+          <Link href="/signup" className="underline underline-offset-4 hover:text-primary">
             สมัครสมาชิก
-          </a>
+          </Link>
         </p>
       </CardFooter>
     </Card>

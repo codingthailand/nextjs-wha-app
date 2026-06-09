@@ -1,15 +1,9 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export const Logo = () => (
-  <Image 
-    src="/next.svg"
-    alt="โลโก้ Next.js"
-    width={0}
-    height={0}
-    style={{
-      width: 124,
-      height: 32
-    }}
-    loading="eager"
-  />
+  <Link href="/" className="flex items-center gap-2 no-underline">
+    <span className="font-heading text-[22px] font-semibold tracking-tight text-primary">
+      MarketNest
+    </span>
+  </Link>
 );

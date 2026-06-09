@@ -16,7 +16,7 @@ const Navbar = async () => {
   });
 
   return (
-    <nav className="h-16 border-b bg-background">
+    <nav className="h-16 border-b border-border bg-background">
       <div className="mx-auto flex h-full max-w-(--breakpoint-xl) items-center justify-between px-4 sm:px-6 lg:px-8">
         <Logo />
 
@@ -24,8 +24,8 @@ const Navbar = async () => {
         <NavMenu className="hidden md:block" />
 
         <Link href="/cart">
-          <Badge className="p-2 text-md">
-            <ShoppingBasket /> <CountCartItem /> ชิ้น
+          <Badge variant="default" className="gap-1.5 px-3 py-1.5">
+            <ShoppingBasket className="size-4" /> <CountCartItem /> ชิ้น
           </Badge>
         </Link>
 
@@ -34,7 +34,7 @@ const Navbar = async () => {
           {
             !session && (
               <>
-                <Button asChild className="hidden sm:inline-flex" variant="outline">
+                <Button asChild className="hidden sm:inline-flex" variant="secondary">
                   <Link href="/login">เข้าสู่ระบบ</Link>
                 </Button>
                 <Button asChild>
@@ -47,7 +47,7 @@ const Navbar = async () => {
           {
             session && (
               <>
-                <div className="flex items-center mr-4">
+                <div className="flex items-center mr-4 text-body-small text-muted-foreground">
                   สวัสดี, {session.user.name}
                 </div>
                 <div>
