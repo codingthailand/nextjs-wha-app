@@ -1,0 +1,66 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "MarketNest" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e5]: MarketNest
+      - navigation "Main" [ref=e6]:
+        - list [ref=e8]:
+          - listitem [ref=e9]:
+            - link "หน้าหลัก" [ref=e10] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e11]:
+            - link "หลักสูตร" [ref=e12] [cursor=pointer]:
+              - /url: /course
+          - listitem [ref=e13]:
+            - link "เกี่ยวกับเรา" [ref=e14] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e15]:
+            - link "สินค้า" [ref=e16] [cursor=pointer]:
+              - /url: /product
+          - listitem [ref=e17]:
+            - link "ติดต่อเรา" [ref=e18] [cursor=pointer]:
+              - /url: /contact
+      - link "0 ชิ้น" [ref=e19] [cursor=pointer]:
+        - /url: /cart
+        - generic [ref=e20]:
+          - img
+          - generic [ref=e21]: "0"
+          - text: ชิ้น
+      - generic [ref=e22]:
+        - link "เข้าสู่ระบบ" [ref=e23] [cursor=pointer]:
+          - /url: /login
+        - link "สมัครสมาชิก" [ref=e24] [cursor=pointer]:
+          - /url: /signup
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - heading "ติดต่อเรา" [level=1] [ref=e27]
+      - paragraph [ref=e28]: เรายินดีรับฟังข้อเสนอแนะและตอบทุกคำถาม
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e31]:
+          - generic [ref=e32]:
+            - img [ref=e33]
+            - generic [ref=e36]: hello@marketnest.com
+          - generic [ref=e37]:
+            - img [ref=e38]
+            - generic [ref=e40]: 02-123-4567
+          - generic [ref=e41]:
+            - img [ref=e42]
+            - generic [ref=e45]: จันทร์ - ศุกร์ 09:00 - 18:00 น.
+        - paragraph [ref=e46]: ทีมงานของเราพร้อมตอบทุกข้อสงสัยเกี่ยวกับสินค้า การสั่งซื้อ หรือข้อเสนอแนะต่าง ๆ เพื่อให้คุณได้รับประสบการณ์ที่ดีที่สุด
+      - generic [ref=e47]:
+        - group [ref=e48]:
+          - generic [ref=e49]: ชื่อ
+          - textbox "กรอกชื่อของคุณ" [ref=e51]
+        - group [ref=e52]:
+          - generic [ref=e53]: Email
+          - textbox "example@email.com" [ref=e55]
+        - group [ref=e56]:
+          - generic [ref=e57]: ข้อความ
+          - textbox "พิมพ์ข้อความที่ต้องการ..." [ref=e59]
+        - button "ส่งข้อความ" [ref=e60] [cursor=pointer]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e66] [cursor=pointer]:
+    - img [ref=e67]
+  - alert [ref=e70]

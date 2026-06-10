@@ -1,0 +1,15 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e5]:
+    - link "Welcome to WHA" [ref=e6] [cursor=pointer]:
+      - /url: /product
+    - heading "งานฝีมือที่บอกเล่าเรื่องราว" [level=1] [ref=e7]
+    - paragraph [ref=e8]: ค้นพบสินค้าแฮนด์เมดที่ทำด้วยความรักและความตั้งใจ จากช่างฝีมือผู้มากประสบการณ์ทั่วทุกมุมของประเทศไทย
+    - generic [ref=e9]:
+      - link "เริ่มช้อปปิ้ง" [ref=e10] [cursor=pointer]:
+        - /url: /product
+        - text: เริ่มช้อปปิ้ง
+        - img
+      - link "เรื่องราวของเรา" [ref=e11] [cursor=pointer]:
+        - /url: /about
+  - region "Notifications alt+T"
+  - alert [ref=e12]
