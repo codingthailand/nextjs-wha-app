@@ -4,6 +4,7 @@ import { Lora, Open_Sans, Source_Code_Pro } from "next/font/google";
 import { cn } from "@/lib/utils";
 import "../globals.css";
 import Navbar from "@/components/navbar";
+import { Toaster } from "@/components/ui/sonner";
 
 const lora = Lora({
   subsets: ["latin", "latin-ext"],
@@ -43,6 +44,7 @@ export default function RootLayout({
         <Navbar />
         </Suspense>
         {children}
+        <Toaster />
       </body>
     </html>
   );
