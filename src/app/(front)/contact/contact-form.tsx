@@ -112,7 +112,7 @@ export const ContactForm = () => {
       />
 
       <Button type="submit" disabled={isPending} className="w-full">
-        {isPending ? "กำลังส่ง..." : "ส่งข้อความ"}
+        {isPending ? "กำลังส่ง..." : "Send Message"}
       </Button>
     </form>
   );

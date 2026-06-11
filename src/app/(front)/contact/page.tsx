@@ -4,16 +4,16 @@ import { Separator } from "@/components/ui/separator";
 import { ContactForm } from "./contact-form";
 
 export const metadata: Metadata = {
-  title: "ติดต่อเรา",
+  title: "Contact US",
   description: "ช่องทางการติดต่อ MarketNest",
 };
 
 export default function ContactPage() {
   return (
-    <main className="mx-auto max-w-5xl px-4 py-12 md:py-20">
+    <main className="mx-auto max-w-5xl px-5 py-12 md:py-20">
       <div className="mb-10 md:mb-14">
-        <h1 className="font-heading text-3xl font-bold md:text-4xl">
-          ติดต่อเรา
+        <h1 className="font-heading text-4xl font-bold md:text-4xl">
+          Contact us
         </h1>
         <p className="mt-2 text-muted-foreground">
           เรายินดีรับฟังข้อเสนอแนะและตอบทุกคำถาม
@@ -33,7 +33,7 @@ export default function ContactPage() {
             </div>
             <div className="flex items-center gap-3">
               <Clock className="size-5 text-muted-foreground" />
-              <span className="text-muted-foreground">จันทร์ - ศุกร์ 09:00 - 18:00 น.</span>
+              <span className="text-muted-foreground">จันทร์ - ศุกร์ 09:00 - 17:00 น.</span>
             </div>
           </div>
 
