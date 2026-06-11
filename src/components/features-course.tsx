@@ -18,11 +18,11 @@ const FeaturesCourse = ({ courses }: Props) => {
           {courses.map((course) => (
             <div
               className="flex w-full flex-col rounded-md border border-border bg-card p-5 hover:border-[#D6D3D1] transition-colors"
-              key={course.title}
+              key={course.id}
             >
               <div className="relative mb-5 aspect-4/5 w-full overflow-hidden rounded-md sm:mb-6">
                 <Image
-                  alt={course.id.toString()}
+                  alt={course.title}
                   className="size-full bg-muted object-cover"
                   width={0}
                   height={0}
